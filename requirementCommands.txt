@@ -1,0 +1,2 @@
+npx prisma generate   
+npx prisma migrate dev --chat init   
