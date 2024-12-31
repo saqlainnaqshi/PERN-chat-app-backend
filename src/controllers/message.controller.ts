@@ -16,7 +16,6 @@ export const sendMessage = async (req: Request, res: Response) => {
 			},
 		});
 
-		// the very first message is being sent, that's why we need to create a new conversation
 		if (!conversation) {
 			conversation = await prisma.conversation.create({
 				data: {
